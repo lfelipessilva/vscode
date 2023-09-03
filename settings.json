@@ -1,0 +1,76 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "Fira code,  monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": 500,
+  "editor.lineNumbers": "relative",
+  "tabnine.experimentalAutoImports": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "git.autofetch": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.tabSize": 2,
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontSize": 14,
+  "editor.suggestSelection": "first",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "window.menuBarVisibility": "hidden",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.guides.bracketPairs": "active",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.views.commits.files.layout": "tree",
+  "diffEditor.maxComputationTime": 0,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": ["bennycode.sort-everything.sortFile"]
+    },
+    {
+      "before": ["leader", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": ["workbench.action.nextEditor"]
+    }
+  ],
+  "window.zoomLevel": 0.8
+}
