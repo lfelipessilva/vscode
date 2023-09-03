@@ -4,6 +4,10 @@
     "key": "ctrl+e"
   },
   {
+    "command": "workbench.action.terminal.toggleTerminal",
+    "key": "ctrl+t"
+  },
+  {
     "command": "explorer.newFile",
     "key": "a",
     "when": "filesExplorerFocus && !inputFocus"
