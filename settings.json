@@ -15,6 +15,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.fontFamily": "Fira code,  monospace",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "material-icon-theme",
   "editor.fontSize": 14,
   "editor.fontLigatures": true,
   "editor.fontWeight": 500,
@@ -38,13 +40,13 @@
     "**/.factorypath": true
   },
   "window.menuBarVisibility": "hidden",
+  "window.zoomLevel": 0.8,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.guides.bracketPairs": "active",
   "diffEditor.ignoreTrimWhitespace": false,
   "gitlens.views.commits.files.layout": "tree",
   "diffEditor.maxComputationTime": 0,
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Catppuccin Mocha",
   "vim.leader": "<space>",
   "vim.normalModeKeyBindings": [
     {
