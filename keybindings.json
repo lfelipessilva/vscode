@@ -43,7 +43,7 @@
   {
     "key": "ctrl+h",
     "command": "workbench.action.focusPreviousPart",
-    "when": "!activeEditorIsFirstInGroup"
+    "when": "activeEditorGroupIndex == 1"
   },
   {
     "key": "ctrl+shift+l",
