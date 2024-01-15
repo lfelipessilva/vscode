@@ -15,7 +15,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -30,6 +30,7 @@
   "tabnine.experimentalAutoImports": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
   "git.autofetch": true,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -49,7 +50,6 @@
   "window.zoomLevel": 0.8,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.guides.bracketPairs": "active",
-  "diffEditor.ignoreTrimWhitespace": false,
   "gitlens.views.commits.files.layout": "tree",
   "diffEditor.maxComputationTime": 0,
   "editor.minimap.enabled": false,
