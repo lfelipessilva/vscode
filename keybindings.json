@@ -1,86 +1,70 @@
 [
   {
-    "command": "workbench.action.toggleSidebarVisibility",
-    "key": "ctrl+e"
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
-    "command": "workbench.action.terminal.toggleTerminal",
-    "key": "ctrl+t"
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
-    "command": "explorer.newFile",
-    "key": "a",
-    "when": "filesExplorerFocus && !inputFocus"
+    "key": "ctrl+h",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "inputFocus && vim.mode == 'Normal' && activeEditorGroupIndex === 1"
   },
   {
-    "command": "renameFile",
-    "key": "r",
-    "when": "filesExplorerFocus && !inputFocus"
+    "key": "ctrl+l",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "explorerViewletFocus"
+  },
+  { "key": "ctrl+f f" , "command": "workbench.action.quickOpen"},
+  { "key": "ctrl+f s" , "command": "workbench.action.findInFiles"},
+  { "key": "ctrl+t", "command": "workbench.action.terminal.focus" },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
   },
   {
-    "command": "cutfile",
-    "key": "x",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "command": "filesExplorer.copy",
     "key": "c",
-    "when": "filesExplorerFocus && !inputFocus"
+    "command": "filesExplorer.copy",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
-    "command": "filesExplorer.paste",
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
     "key": "p",
-    "when": "filesExplorerFocus && !inputFocus"
+    "command": "filesExplorer.paste",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
-    "command": "deleteFile",
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  {
     "key": "d",
-    "when": "filesExplorerFocus && !inputFocus"
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
-    "key": "ctrl+h",
-    "command": "workbench.action.focusLeftGroup"
-  },
-  {
-    "key": "ctrl+l",
-    "command": "workbench.action.focusRightGroup"
-  },
-  {
-    "key": "ctrl+l",
-    "command": "workbench.action.focusNextPart",
-    "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+h",
-    "command": "workbench.action.focusPreviousPart",
-    "when": "activeEditorGroupIndex == 1"
-  },
-  {
-    "key": "ctrl+shift+l",
-    "command": "workbench.action.increaseViewWidth"
-  },
-  {
-    "key": "ctrl+shift+h",
-    "command": "workbench.action.decreaseViewWidth"
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
     "key": "alt+j",
     "command": "editor.action.moveLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+down",
-    "command": "-editor.action.moveLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "inputFocus && vim.mode == 'Normal'"
   },
   {
     "key": "alt+k",
     "command": "editor.action.moveLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+up",
-    "command": "-editor.action.moveLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
+    "when": "inputFocus && vim.mode == 'Normal'"
   }
 ]
