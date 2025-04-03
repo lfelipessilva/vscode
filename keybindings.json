@@ -66,5 +66,15 @@
     "key": "alt+k",
     "command": "editor.action.moveLinesUpAction",
     "when": "inputFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift+/",
+    "command": "actions.find",
+    "when": "editorFocus && vim.mode === 'Normal'"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-actions.find",
+    "when": "editorFocus || editorIsOpen"
   }
 ]
